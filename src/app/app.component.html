@@ -1,0 +1,62 @@
+<nav class="navbar navbar-fixed-top fade-in">
+
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+        aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" id="logoTitle" routerLink="/"><i class="far fa-map"></i> GridKey</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a  routerLinkActive="active" routerLink="uber-tool"> <i class="fab fa-uber"></i> Uber Monitor</a>
+          </li>
+          
+        <li>
+          <a id="planTripsBtn" routerLink="google-time" routerLinkActive="active"><i class="fas fa-car"></i> Plan Trips</a>
+        </li>
+
+      </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container-fluid -->
+</nav>
+<div id="seperator"></div>
+<router-outlet></router-outlet>
+<div class="footer">
+  <div class="footerContainer">
+    <div class="row">
+      <div class="col-xs-6">
+        <a href="https://github.com/smelt"><i class="fab fa-github" aria-hidden="true"></i><span class="footerspace"></span>GitHub Link</a>
+      </div>
+      <div class="col-xs-6">
+        <a href="https://www.linkedin.com/in/shivam-satyarthi-b78750118/"><i class="fab fa-linkedin" aria-hidden="true"></i><span class="footerspace"></span>LinkedIn</a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-6">
+        <a><i class="fa fa-gavel" aria-hidden="true"></i><span class="footerspace"></span>Terms of Use</a>
+      </div>
+      <div class="col-xs-6">
+        <a><i class="fa fa-sitemap" aria-hidden="true"></i><span class="footerspace"></span>SiteMap</a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-6">
+        <p><i class="fa fa-male" aria-hidden="true"></i><span class="footerspace"></span>Shivam Satyarthi</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+

@@ -1,0 +1,15 @@
+.filler {
+  height: 100%;
+  text-align: center;
+  background: url(https://i.imgur.com/BfeBV9I.jpg);
+}
+
+.filler h1 {
+  font-size: 2.5em;
+  color: #070f38;
+  width: 30%;
+  margin: auto;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  float: left;
+}

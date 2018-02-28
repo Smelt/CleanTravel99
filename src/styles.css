@@ -1,0 +1,84 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700,900');
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Bungee|Lato:400,700,900');
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+  color: #6d6f7b;
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+  
+}
+
+.js-loading *,
+.js-loading *:before,
+.js-loading *:after {
+  animation-play-state: paused !important;
+}
+
+@keyframes fade-in-animation {
+  0%   { opacity: 0; }
+  10%   { opacity: 0; }
+  25%   { opacity: .4; }
+  100% { opacity: 1; }
+}
+
+.fade-in {
+  animation: 1.6s ease-out 0s 1 fade-in-animation;
+}
+
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-150%);
+  }
+  10% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(150%);
+  }
+  10% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    opacity: 0; 
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.left-slide {
+  animation: 1.1s ease-out 0s 1 slideInFromLeft;
+}
+
+.right-slide {
+  animation: 1.1s ease-out 0s 1 slideInFromRight;
+}
+
+.bottom-slide {
+  animation: 1.1s ease-out 0s 1 slideInFromBottom;
+}
